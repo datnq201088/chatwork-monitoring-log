@@ -1,0 +1,26 @@
+{
+  "name": "Server log notification",
+  "version": "1.0.0",
+  "description": "Log error of server",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src/index.js --out-file build/index.js",
+    "test": "test"
+  },
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "chatwork-api-client": "^3.0.6",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "tail": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1"
+  },
+  "author": "datnq2010@gmail.com",
+  "license": "ISC"
+}
