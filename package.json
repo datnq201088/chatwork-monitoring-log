@@ -1,5 +1,5 @@
 {
-  "name": "Server log notification",
+  "name": "Chatwork-log-notification",
   "version": "1.0.0",
   "description": "Log error of server",
   "scripts": {
