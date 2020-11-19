@@ -11,7 +11,8 @@ let tail = new Tail(process.env.LOG_PATH);
 tail.watch();
 tail.on('line', async (data) => {
   try {
-    const message = `[toall][info][title]Bug in  ${process.env.ENV.toUpperCase()}[/title] ${data}[/info]`;
+    const receivers = process.env.CHATWORK_USERS;
+    const message = `${receivers}[info][title]Bug in  ${process.env.ENV.toUpperCase()}[/title] ${data}[/info]`;
     await api.postRoomMessage(process.env.CHATWORK_ROOM_ID, {
       body: message,
       self_unread: 1,
